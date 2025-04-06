@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Введите название города">
+                <button id="search-btn">🔍</button>
+            </div>
+
+            <div class="weather-info">
+                <div class="city-info">
+                    <h2 id="city-name">Москва</h2>
+                    <p id="date-time">Загрузка...</p>
+                </div>
+                
+                <div class="temp-info">
+                   <img id="weather-icon" src="" alt="">
+                   <h1 id="temperature">0°С</h1>
+                   <p id="weather-description">Загрузка....</p> 
+                </div>
+
+                <div class="details">
+                    <div class="detail-item">
+                        <div>
+                            <p>Ощущается как</p>
+                            <p id="feels-like">0°С</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div>
+                            <p>Влажность</p>
+                            <p id="humidity">0%</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div>
+                            <p>Ветер</p>
+                            <p id="wind-speed">0 м/с</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-items">
+                        <div>
+                            <p>Давление</p>
+                            <p id="pressure">0мм р.т.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast" id="forecast-cont">
+
+                <!--Здесь будет прогноз погоды на ближайщие дни-->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
